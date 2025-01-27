@@ -1,0 +1,23 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+
+ftp:
+  server:
+    host: ftp.oss.com
+    port: 21
+    username: ftpuser
+    password: ftppassword
+    remote-directory: /remote/files
+    local-directory: /tmp/ftp
+
+minio:
+  endpoint: http://127.0.0.1:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: my-bucket
+
+task:
+  cron: "0 0 2 * * *" # Schedule for 2:00 AM daily
+
